@@ -1,6 +1,7 @@
 var static = require('node-static')
     , http = require('http');
 
+var port = process.env.PORT;
 var clientFiles = new static.Server('./client');
 
 var httpServer = http.createServer(function(request, response) {
@@ -31,4 +32,5 @@ io.sockets.on('connection', function(socket) {
     });
 });
 
-httpServer.listen(2000);
+httpServer.listen(port, '0.0.0.0');
+console.log('listening on port : ' + port);
