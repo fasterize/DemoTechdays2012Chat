@@ -1,7 +1,7 @@
 var static = require('node-static')
     , http = require('http');
 
-var port = process.env.PORT;
+var port = process.env.PORT || 2000;
 var clientFiles = new static.Server('./client');
 
 var httpServer = http.createServer(function(request, response) {
