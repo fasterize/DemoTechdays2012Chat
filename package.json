@@ -1,0 +1,14 @@
+{
+  "name": "DemoChat",
+  "description": "Aoccdrnig to a rscheearch at Cmabrigde Uinervtisy, it dseno't mtaetr in waht oerdr the ltteres in a wrod are",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fasterize/DemoTechdays2012Chat"
+  },
+  "private": true,
+  "dependencies": {
+        "uglify-js": ""
+  },
+  "engines": { "node": "0.6.x" }
+}
